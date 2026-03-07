@@ -591,7 +591,21 @@ python seed_data.py
 
 ## 🔧 Environment Variables Reference
 
-Create a `.env` file in the root directory with these keys:
+> **💡 Quick Start:** Copy the example file and fill in your keys:
+> ```bash
+> cp .env.example .env
+> # Then fill in your actual API key values
+> ```
+
+The `.env.example` file in the root directory contains:
+- ✅ **Placeholder values** for every variable (no real keys committed)
+- 📝 **Inline comments** on each section explaining where to get the key, the free tier limits, and whether a credit card is required
+- 🗄️ **Database note:** Leave `DATABASE_URL` empty to automatically use SQLite with zero configuration
+
+> **🔒 Security:** The `.gitignore` prevents your real `.env` file from ever being pushed to GitHub.
+
+Create your `.env` from the example above, then populate with your actual keys:
+
 
 ```env
 # ── LLM Providers ──────────────────────────────────────
